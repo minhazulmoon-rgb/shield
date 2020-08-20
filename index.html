@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shield</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+ <script src="validate.js"></script>
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Rowdies', cursive;
+        color: whitesmoke;
+        margin: 0px;
+        padding: 0px;
+        background: url("fashiontalk.jpg"); 
+        /* background: url("https://cms.qz.com/wp-content/uploads/2019/11/ap_17171397452314-e1501362136510.jpg?quality=75&strip=all&w=1900&h=1068"); */
+
+
+    }
+
+    .left {
+        /* border: 2px solid rgba(219, 4, 57, 0.993); */
+        display: inline-block;
+        position: absolute;
+        left: 45px;
+        top: 10px;
+    }
+
+    .left img {
+        width: 153px;
+         /* filter: invert(100%);  */
+        
+
+
+    }
+
+    .left div {
+        text-align: center; 
+        color: rgb(226, 225, 233);
+
+    }
+
+    .mid {
+        /* border: 2px solid rgba(219, 4, 57, 0.993); */
+        display: block;
+        width: 45%;
+        margin: 30px auto;
+        font-family: 'Rowdies', cursive;
+        
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid rgba(219, 4, 57, 0.993); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: rgb(226, 225, 233);
+        text-decoration: none;
+        padding: 50px 10px;
+        font-size: 19px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: rgba(184, 245, 238, 0.822);
+    }
+
+    .btn {
+        margin: -2px 8px;
+        background-color: rgb(17, 95, 141);
+        color: white;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        /* border: 3px solid green; */
+        display: block;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 45%;
+        border-radius: 28px;
+
+    }
+
+    .form.group input {
+        font-size: 16px;
+        margin: 6px;
+        text-align: left;
+        display: block;
+        width: 237px;
+        font-family: 'Rowdies', cursive;
+        border: 4px solid black;
+        padding: 3px;
+        border-radius: 15px;
+
+
+    }
+
+    .container h1 {
+        text-align: left;
+    }
+
+    .container button {
+        margin: 12px;
+        border-radius: 15px;
+    }
+    #m{
+
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Untitled001.png"
+                alt="">
+
+            <div id="m">Shield The Power Vest</div>
+
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul>
+                <ul class="navbar">
+                    <!-- <li><a href="#" class="active">Home</a></li> -->
+                    <li><a href="https://sites.google.com/view/shield-woman-safety-best/home?authuser=0" target="blank">About us</a></li>
+                    <li><a href="https://sites.google.com/view/shield-woman-safety-best/subscription-system?authuser=0 " target="blank">Subscription Policy</a></li>
+                    <li><a href="https://sites.google.com/view/shield-woman-safety-best/team-member?authuser=0"target="blank">Contact us</a></li>
+
+
+                </ul>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Subscribe To Shield Now</h1>
+         <form action=""> 
+            <div class="form group" method="post" name="form" onsubmit="return validated()">  
+                <input type="text" name="user" placeholder="User Name">
+                
+            </div>
+            <div class="form group">
+                <input id="email_error" type="text" name="email" placeholder="Email">
+            </div>
+            <div class="form group">
+                <input id='pass_error' type="text" name="pass" placeholder="Password">
+            </div>
+            <div class="form group">
+                <input type="text" name="age" placeholder="Re-Type password">
+            </div>
+            <div class="form group">
+                <input type="text" name="age" placeholder="Age">
+            </div>
+            <button class="btn">Submit</button>
+            <button class="btn">Reset</button>
+        </form>
+    </div>
+    <script src="validate.js"></script>
+    
+</body>
+
+</html>
